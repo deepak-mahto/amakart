@@ -2,7 +2,7 @@ import AddToCartIcon from "../../../assets/icons/add_cart.svg";
 import { Fragment, useState } from "react";
 import Modal from "../UI/Modal";
 
-const ListItem = ({ data, updateItemTitle, onAdd, onRemove }) => {
+const ListItem = ({ data, onAdd, onRemove }) => {
   const [showModal, setShowModal] = useState(false);
 
   const increaseByOne = (event) => {
@@ -38,7 +38,6 @@ const ListItem = ({ data, updateItemTitle, onAdd, onRemove }) => {
             <h3>{data.title}</h3>
           </div>
         </div>
-
         {data.quantity <= 0 ? (
           <button className={"cart-add"} onClick={increaseByOne}>
             <span>Add to cart</span>

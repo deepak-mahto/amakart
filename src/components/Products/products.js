@@ -43,25 +43,6 @@ const Products = ({ onAddItem, onRemoveItem, eventState }) => {
     }
   }, [eventState]);
 
-  const updateItemTitle = async (itemId) => {
-    console.log(`Item with Id: ${itemId}`);
-    try {
-      let title = `Update title #Item-${itemId}`;
-      await axios.patch(
-        `https://react-learning-7c870-default-rtdb.firebaseio.com/items/${itemId}.json`,
-        {
-          title: title,
-        }
-      );
-      let data = [...items];
-      let index = data.findIndex((e) => e.id === itemId);
-      data[index]["title"] = title;
-      setItems(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   const handleAddItem = (id) => {
     let data = [...items];
     let index = data.findIndex((i) => i.id === id);
