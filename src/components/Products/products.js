@@ -71,7 +71,6 @@ const Products = ({ onAddItem, onRemoveItem, eventState }) => {
                 onRemove={handleRemoveItem}
                 key={item.id}
                 data={item}
-                updateItemTitle={updateItemTitle}
               />
             );
           })}

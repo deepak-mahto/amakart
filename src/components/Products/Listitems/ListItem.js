@@ -22,11 +22,7 @@ const ListItem = ({ data, onAdd, onRemove }) => {
   return (
     <Fragment>
       <div onClick={handleModal} className={"item-card"}>
-        <img
-          className={"img-fluid"}
-          src={`/assets/${data.thumbnail}`}
-          alt={data.title}
-        />
+        <img className={"img-fluid"} src={data.thumbnail} alt={data.title} />
         <div className={"item-card__information"}>
           <div className={"pricing"}>
             <span>Rs {data.discountedPrice}</span>
@@ -61,7 +57,7 @@ const ListItem = ({ data, onAdd, onRemove }) => {
             <div className="img-wrap">
               <img
                 className={"img-fluid"}
-                src={`/assets/${data.thumbnail}`}
+                src={data.thumbnail}
                 alt={data.title}
               />
             </div>

@@ -6,16 +6,16 @@ const SubHeader = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/">Category 1</a>
+          <a href="/">Tea, Coffee & Health Drinks</a>
         </li>
         <li>
-          <a href="/">Category 2</a>
+          <a href="/">Dairy, Breads & Eggs</a>
         </li>
         <li>
-          <a href="/">Category 3</a>
+          <a href="/">Breakfast & Instant Food</a>
         </li>
         <li>
-          <a href="/">Category 4</a>
+          <a href="/">Cold Drinks and Juices</a>
         </li>
       </ul>
     </div>
