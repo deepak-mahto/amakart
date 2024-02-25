@@ -41,6 +41,7 @@ const Products = ({ onAddItem, onRemoveItem, eventState }) => {
         handleRemoveItem(eventState.id);
       }
     }
+    // eslint-disable-next-line
   }, [eventState]);
 
   const handleAddItem = (id) => {
